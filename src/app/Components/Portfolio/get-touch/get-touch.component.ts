@@ -52,42 +52,6 @@ export class GetTouchComponent {
       });
   }
 
-  zoom = 12;
-  center: google.maps.LatLngLiteral = { lat: 33.4925666, lng: 36.2935728 };
-  options: google.maps.MapOptions = {
-    styles: [
-      {
-        elementType: 'geometry',
-        stylers: [{ color: '#1d2c4d' }]
-      },
-      {
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#8ec3b9' }]
-      },
-      {
-        elementType: 'labels.text.stroke',
-        stylers: [{ color: '#1a3646' }]
-      },
-      {
-        featureType: 'administrative.country',
-        elementType: 'geometry.stroke',
-        stylers: [{ color: '#4b6878' }]
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry',
-        stylers: [{ color: '#304a7d' }]
-      },
-      {
-        featureType: 'water',
-        elementType: 'geometry',
-        stylers: [{ color: '#0e1626' }]
-      }
-    ],
-    disableDefaultUI: false,
-    zoomControl: true,
-    mapTypeControl: true
-  };
 
   contactMeDescription = " Have a project for me? Any questions about something I've built? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me."
 
