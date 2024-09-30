@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { GoogleMapsModule } from '@angular/google-maps';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { LoaderComponent } from "../../Shared/loader/loader.component";
 import { HotToastService } from '@ngneat/hot-toast';
@@ -9,7 +8,7 @@ import { LucideAngularModule, MapPin, Mail, Github, Instagram, Linkedin } from '
 @Component({
   selector: 'app-get-touch',
   standalone: true,
-  imports: [GoogleMapsModule, CommonModule, ReactiveFormsModule, LoaderComponent, LucideAngularModule],
+  imports: [CommonModule, ReactiveFormsModule, LoaderComponent, LucideAngularModule],
   templateUrl: './get-touch.component.html',
   styleUrl: './get-touch.component.scss'
 })
